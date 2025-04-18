@@ -1,5 +1,5 @@
-import Sidebar from '@/components/home/Sidebar';
-import Navbar from '@/components/Navbar';
+import Sidebar from 'components/home/Sidebar';
+import Navbar from 'components/Navbar';
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <main className='flex flex-col h-screen'>

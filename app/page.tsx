@@ -1,8 +1,8 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import styles from '@/app/ui/home.module.css';
-import MainContent from '@/components/MainContent';
-import Navbar from '@/components/Navbar';
-import RightSidebar from '@/components/RightSidebar';
+import MainContent from 'components/MainContent';
+import Navbar from 'components/Navbar';
+import RightSidebar from 'components/RightSidebar';
 <div className={styles.shape} />;
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
