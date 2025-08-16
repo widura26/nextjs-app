@@ -4,7 +4,7 @@ import ListButton from '../ListButton';
 
 const Sidebar = () => {
 
-    const ListMenus: ListButtonProps[] = [
+    const ListMenus = [
         { id: 1, name: 'Home', link: '/home' },
         { id: 2, name: 'About', link: '/about' },
     ]
@@ -13,11 +13,11 @@ const Sidebar = () => {
         <div className="w-[300px] p-2 overflow-y-auto">
             <div className="text-white flex flex-col gap-2 text-sm">
                 <ul className='flex flex-col'>
-                    {
+                    {/* {
                         ListMenus.map((item, index) => (
                             <ListButton {...item} key={index}/>
                         ))
-                    }
+                    } */}
                 </ul>
             </div>
         </div>
