@@ -6,7 +6,6 @@ import { useState } from "react";
 import { SidebarProvider } from './context/SidebarContext';
 
 const SpaLayout = ({ children }: { children: React.ReactNode }) => {
-
     return (
         <main className='flex flex-col h-screen'>
             <Navbar/>

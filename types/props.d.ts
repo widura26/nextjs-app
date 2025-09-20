@@ -10,3 +10,7 @@ interface SidebarContextType {
   active: string
   setActive: (value: string) => void
 }
+
+interface ProductCardProps {
+  product: Product
+}

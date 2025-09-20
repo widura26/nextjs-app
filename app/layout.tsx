@@ -1,9 +1,10 @@
 import '@/app/ui/global.css';
 import { Metadata } from 'next';
 import { Poppins } from "next/font/google";
-export const metadata: Metadata = {
-  title: 'Widura Blog',
-};
+
+// export const metadata: Metadata = {
+//   title: 'Login',
+// };
 
 const poppins = Poppins({
   subsets: ["latin"],

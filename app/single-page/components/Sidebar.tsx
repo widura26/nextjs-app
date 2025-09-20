@@ -1,14 +1,16 @@
 "use client"
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useEffect } from 'react';
 import ListButton from './ListButton';
 import { useSidebar } from "../context/SidebarContext"
 
 const Sidebar = () => {
     const { active, setActive } = useSidebar();
+
     const ListStaticMenus = [
         { id: 1, name: 'Dashboard', link: '/single-page' },
         { id: 2, name: 'About', link: '/single-page/about' },
     ]
+    
     const ListDynamicMenus = [  
         { id: 1, name: 'Widura', link: '/single-page/widura' },
         { id: 2, name: 'Hasta', link: '/single-page/hasta' },
