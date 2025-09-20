@@ -7,7 +7,7 @@ const ProductCard:React.FC<ProductCardProps> = ({product}) => {
     const router = useRouter();
 
     return (
-        <div onClick={() => router.push(`/single-page/${product.id}`)} className="border rounded-lg border-[#4d4d4dcc] cursor-pointer active:bg-[#333333]">
+        <div onClick={() => router.push(`/single-page/detail/${product.id}`)} className="border rounded-lg border-[#4d4d4dcc] cursor-pointer active:bg-[#333333]">
             <div className="flex w-auto justify-center">
                 <Image src={product.thumbnail} alt={''} width={100} height={100}/>
             </div>
