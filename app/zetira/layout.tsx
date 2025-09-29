@@ -1,8 +1,9 @@
 import { Metadata } from 'next';
 import { Poppins } from "next/font/google";
-export const metadata: Metadata = {
-  title: 'Widura Blog',
-};
+
+export const metadata = {
+  title: 'Happy Graduation',
+}
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -10,7 +11,7 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export default function RootLayout({
+export default function ZetiraLayout({
   children,
 }: {
   children: React.ReactNode;
