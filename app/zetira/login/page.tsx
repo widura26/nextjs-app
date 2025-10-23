@@ -6,6 +6,7 @@ const Page = (props:any) => {
 
     const [name, setName] = useState("");
     const [date, setDate] = useState("");
+    const [password, setPassword] = useState("")
     const router = useRouter()
     const [loading, setLoading] = useState(false);
 
@@ -30,7 +31,7 @@ const Page = (props:any) => {
             });
 
             if (res.ok) {
-                alert(`Klik '${action}' berhasil dicatat!`);
+                return
             } else {
                 alert(res);
             }
@@ -44,8 +45,9 @@ const Page = (props:any) => {
 
     return (
         <div className='flex h-screen bg-white'>
-            <div className="w-fit m-auto">
-                <h1 className='text-[50px] animate-bounce font-bold bg-gradient-to-r from-blue-400 to-blue-900 bg-clip-text text-transparent'>Login dulu ya..</h1>
+            <div className="w-[350px] m-auto">
+                {/* <h1 className='text-[50px] animate-bounce font-bold bg-gradient-to-r from-blue-400 to-blue-900 bg-clip-text text-transparent'>Login dulu ya..</h1> */}
+                <h1 className='text-[40px] text-center mb-4 font-bold bg-gradient-to-r from-blue-400 to-blue-900 bg-clip-text text-transparent'>Login</h1>
                 <form onSubmit={handleSubmit} action="" method="post" className='flex flex-col gap-2'>
                     <div>
                         <input id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nama lengkap kamu siapa?" type="text" name="name" autoComplete="name" className="block w-full font-bold rounded-md bg-white border-blue-600 border-[2px] px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-indigo-600 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
